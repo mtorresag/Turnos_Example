@@ -1,0 +1,27 @@
+@model Turnos.Models.Especialidad
+@* @model IEnumerable<Turnos.Models.Especialidad> *@
+
+<h3>Esta usted seguro de eliminar</h3>
+@* <h3>@Html.DisplayFor(Model => Model.Descripcion)</h3> *@
+@* <h3>@Html.DisplayNameFor(Model => Model.Descripcion)</h3> *@
+
+@* @foreach (var item in Model)
+{ *@
+<div>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(Model => Model.Descripcion)
+        </dt>
+        <dd>
+            @Html.DisplayFor(Model => Model.Descripcion)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdEspecialidad"/>
+        <input type="submit" value="Eliminar">
+    </form>
+    <div>
+        <a asp-action="Index">Volver</a>
+    </div>
+</div>
+
